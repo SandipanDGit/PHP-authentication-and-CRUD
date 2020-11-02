@@ -1,0 +1,102 @@
+body{
+    height: 100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    margin: 15px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid darkslategray;
+    color: darkslategray;
+    font-size: 1.5rem;
+}
+.login-error{
+    margin: 0 20px 0 20px;
+    padding: 5px 20px 8px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 1px red;
+    color: red;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 20px;
+    text-align: center;
+    display: none;
+}
+#submit{
+    border: 1px solid darkslategray;
+    border-radius: 10px;
+    background-color: darkslategray;
+    color: lightblue;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-bottom: 2px;
+}
+.forgot-password, .signup{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0 10px 10px 10px;
+    color: darkslategray;
+    font-size: large;
+}
+.forgot-password a{
+    text-decoration: none;
+    color: darkslategray;
+    font-size: 1.1rem;
+}
+.signup{
+    margin: 25px 0 20px 0;
+    font-size: larger;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    background-color: lightblue;
+    padding: 5px 15px 8px 15px;
+}
+.signup a{
+    color: darkslategray;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+#form-title{
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    color: darkslategray;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form-wrap{
+    position: relative;
+    top: 175px;
+    width: 400px;
+    box-shadow: 2px 2px grey;
+    border-radius: 10px;
+    margin: auto auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+input:focus{
+    border-bottom-width: 2px;
+}
+.forgot-password a:hover{
+    text-decoration: underline;
+    text-decoration-color: darkslategray;
+}
+.signup a:hover{
+    text-decoration: underline;
+    text-decoration-color: darkslategray;
+}
+#submit:hover{
+    box-shadow: 0 0 6px darkslategray;
+    color: white;
+}

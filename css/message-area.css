@@ -1,0 +1,29 @@
+aside{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    min-height: 100%;
+    width: 250px;
+    background-color: darkslategray;
+    color: lightblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    border: 1px solid darkslategray;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 0px 3px darkslategray;
+    padding: 25px;
+    z-index: -1;
+    text-align: center;
+}
+#text-area{
+    height: 100px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    border: 1px solid lightblue;
+    padding: 10px;
+}
+hr{
+    width: 100%;
+}

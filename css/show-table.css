@@ -1,0 +1,33 @@
+table, td{
+    border: 2px solid darkslategray;
+    border-collapse: collapse;
+}
+table{
+    position: absolute;
+    top: 170px;
+    left: 500px;
+}
+
+td{
+    padding: 7px 75px;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+thead{
+    background-color: darkslategray;
+    color: lightblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+thead td{
+    padding: 12px 45px;
+    text-align: center;
+}
+tbody tr:nth-child(even){
+    background: lightblue;
+}
+tbody tr:hover{
+    background-color: rgba(47,79,79,0.7);
+    color: white;
+}
+
