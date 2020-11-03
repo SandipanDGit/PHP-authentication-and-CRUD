@@ -1,5 +1,6 @@
 <?php include("functions.php") ?>
 <?php 
+    list($validity, $con) = authenticate();
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +24,16 @@
     <?php include("partials/outer-header.php") ?>
     <?php include("partials/login-form.php") ?>
 
-    <?php include("partials/message-area-top.php"); ?> 
+    <?php include("partials/message-area-top.php"); ?>
+    <?php
+        if($validity === 0){
+            echo $con;  //print error
+        }
+        else if($validity === 1){
+            echo "user authenticated";
+            header("Location: show.php");
+        }
+    ?>    
     <?php include("partials/message-area-bottom.php"); ?>
 </body>
 </html>

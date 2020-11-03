@@ -119,6 +119,49 @@ function show(){
     }
 }
 
+function authenticate(){
+    //if 1st arg in return === 0, 2nd arg contains error message, 3rd arg is duplicate of 2nd
+    //if 1st arg in return === 1, 2nd arg 1, 3rd arg contains 1
+
+    //check if form submitted
+    if(!isset($_POST['submit'])){
+        return array(0, 'form not submitted');
+    }
+
+    //prepare connection
+    list($validity, $con) = connect();
+    if($validity === 0){
+        return array(0, "database connection failed", "database connection failed");
+    }
+
+    //prepare query and execute
+    $query = "select username, password from db1.admin";
+    $result = mysqli_query($con, $query);
+    if(!$result){
+        return array(0, "database query failed", "database query failed");
+    }
+    $result_set = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+    //search inside result
+    $flag = 0;
+    foreach($result_set as $row){
+        if($row['username'] == $_POST["username"] && $row['password'] == $_POST['password']){
+            $flag = 1;  //found
+        }
+        else if($row['username'] == $_POST["username"] && $row['password'] != $_POST['password']){
+            $flag = 2;   //wrong passoword
+        }
+    }
+    if($flag === 1){
+        return array(1,1,1);
+    }else if($flag === 2){
+        return array(0, "wrong password", "wrong password");
+    }
+    else{
+        return array(0, "user not found", "user not found");
+    }
+}
+
 
 
 
