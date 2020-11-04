@@ -18,7 +18,7 @@ body{
     background-color: white;
 }
 input{
-    margin: 25px;
+    margin: 15px 25px;
     padding: 10px;
     border: none;
     border-bottom: 1px solid darkslategray;
@@ -47,6 +47,23 @@ input{
     margin-bottom: 10px;
 }
 
+.login{
+    margin-top: 25px;
+    padding: 10px 15px;
+    background-color: lightblue;
+    color: darkslategray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+.login>a{
+    text-decoration: none;
+    color: darkslategray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 #form-title{
     margin: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -64,4 +81,8 @@ input:focus{
 #submit:hover{
     box-shadow: 0 0 6px darkslategray;
     color: white;
+}
+.login>a:hover{
+    text-decoration: underline;
+    text-decoration-color: darkslategray;
 }

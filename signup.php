@@ -1,5 +1,6 @@
 <?php include("functions.php") ?>
 <?php 
+    list($validity, $error) = register();
 ?>
 
 <!DOCTYPE html>
@@ -27,6 +28,14 @@
 
 
     <?php include("partials/message-area-top.php"); ?> 
+    <?php
+        if($validity == 0){
+            echo $error;
+        }
+        else if($validity === 1){
+            echo "user registered";
+        }
+    ?>
     <?php include("partials/message-area-bottom.php"); ?>
 
 
