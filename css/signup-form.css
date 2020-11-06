@@ -18,7 +18,7 @@ body{
     background-color: white;
 }
 input{
-    margin: 15px 25px;
+    margin: 15px 25px 5px 25px;
     padding: 10px;
     border: none;
     border-bottom: 1px solid darkslategray;
@@ -37,7 +37,25 @@ input{
     text-align: center;
     display: none;
 }
-#submit{
+.error-message{
+    display: none;
+    margin: 0px 40px;
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#signup-error{
+    display: none;
+    background-color: rgb(238, 172, 172);
+    color: maroon;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    padding: 8px 25px 8px 25px;
+    margin: 10px;
+    border-radius: 10px;
+}
+#submit-button{
     border: 1px solid darkslategray;
     border-radius: 10px;
     background-color: darkslategray;
@@ -78,7 +96,7 @@ form{
 input:focus{
     border-bottom-width: 2px;
 }
-#submit:hover{
+#submit-button:hover{
     box-shadow: 0 0 6px darkslategray;
     color: white;
 }

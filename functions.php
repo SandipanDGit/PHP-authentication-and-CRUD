@@ -229,7 +229,7 @@ function register(){
     //if 1st arg in return === 1, 2nd arg 1, 3rd arg contains 1
 
     //check if form submitted
-    if(!isset($_POST['submit'])){
+    if(!isset($_POST['submit_form'])){
         return array(0, 'form not submitted');
     }
 
@@ -242,7 +242,7 @@ function register(){
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $confirm_password = $_POST['confirm_password'];
+    $confirm_password = $_POST['confirm-password'];
 
     //sanitize the data
     // list($username, $email, $password, $confirm_password) = sanitize($username, $email, $password, $confirm_password);
