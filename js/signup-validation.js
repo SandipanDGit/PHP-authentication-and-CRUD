@@ -1,4 +1,3 @@
-
 var username_verified = 0;
 var email_verified = 0;
 var password_verified =0;
@@ -98,9 +97,7 @@ submit_button.addEventListener('click', function(e){
     }
     else{
         var signup_error = document.querySelector('#signup-error');
-        signup_error.innerHTML = 'Form not filled yet';
+        signup_error.innerHTML = 'Form not filled properly';
         signup_error.style.display = 'block';
     }
 })
-
-

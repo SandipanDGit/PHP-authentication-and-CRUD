@@ -5,6 +5,19 @@ body{
     justify-content: center;
     align-items: center;
 }
+#form-wrap{
+    position: relative;
+    /* top: 150px; */
+    width: 400px;
+    box-shadow: 2px 2px grey;
+    border-radius: 10px;
+    margin: 150px auto 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
 input{
     margin: 15px;
     padding: 10px;
@@ -72,19 +85,7 @@ form{
     flex-direction: column;
     align-items: center;
 }
-#form-wrap{
-    position: relative;
-    top: 175px;
-    width: 400px;
-    box-shadow: 2px 2px grey;
-    border-radius: 10px;
-    margin: auto auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-}
+
 input:focus{
     border-bottom-width: 2px;
 }
